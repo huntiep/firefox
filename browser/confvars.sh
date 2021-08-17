@@ -5,7 +5,7 @@
 
 MOZ_APP_BASENAME=Firefox
 MOZ_APP_VENDOR=Mozilla
-MOZ_UPDATER=1
+MOZ_UPDATER=0
 
 if test "$OS_ARCH" = "WINNT"; then
   if ! test "$HAVE_64BIT_BUILD"; then

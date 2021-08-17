@@ -13,7 +13,6 @@ def test(mod, path, entity=None):
                    "browser",
                    "browser/extensions/formautofill",
                    "browser/extensions/fxmonitor",
-                   "browser/extensions/report-site-issue",
                    "extensions/spellcheck",
                    "other-licenses/branding/firefox",
                    "browser/branding/official",

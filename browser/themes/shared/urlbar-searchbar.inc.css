@@ -6,7 +6,7 @@
 
 %define fieldBorderColor hsla(240,5%,5%,.25)
 %define fieldHoverBorderColor hsla(240,5%,5%,.35)
-%define urlbarMarginInline 5px
+%define urlbarMarginInline 0px
 %define urlbarSearchButtonWidth calc(16px + 2 * @identityBoxPaddingInline@)
 
 :root {
@@ -198,8 +198,8 @@
 
 #urlbar[breakout][breakout-extend] {
   top: -@urlbarBreakoutExtend@;
-  left: calc(-@urlbarMarginInline@ - @urlbarBreakoutExtend@);
-  width: calc(100% + 2 * @urlbarMarginInline@ + 2 * @urlbarBreakoutExtend@);
+  left: 0;
+  width: 100;
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-background {
@@ -212,8 +212,8 @@
 
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
   height: calc(var(--urlbar-toolbar-height) + 2 * @urlbarBreakoutExtend@);
-  padding-block: calc(@urlbarBreakoutExtend@ + (var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2);
-  padding-inline: calc(@urlbarMarginInline@ + @urlbarBreakoutExtend@);
+  padding-block: 0;
+  padding-inline: 0;
 }
 
 #urlbar.searchButton[breakout][breakout-extend] > #urlbar-input-container > #urlbar-search-button {
@@ -231,7 +231,7 @@
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-background {
-  animation-name: urlbar-grow;
+  animation-name: none;
   animation-duration: 0s;
   animation-timing-function: var(--animation-easing-function);
 }
