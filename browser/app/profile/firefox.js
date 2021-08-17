@@ -1286,6 +1286,9 @@ pref("prompts.defaultModalType", 3);
 // Activates preloading of the new tab url.
 pref("browser.newtab.preload", true);
 
+// Changes the new tab page.
+pref("browser.newtabpage.url", "about:blank");
+
 // Activity Stream prefs that control to which page to redirect
 #ifndef RELEASE_OR_BETA
   pref("browser.newtabpage.activity-stream.debug", false);

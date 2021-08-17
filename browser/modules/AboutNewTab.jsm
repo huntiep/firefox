@@ -77,6 +77,16 @@ const AboutNewTab = {
       }
     );
 
+    XPCOMUtils.defineLazyPreferenceGetter(
+      this,
+      "_newTabURL",
+      "browser.newtabpage.url",
+      "about:blank",
+      (aPreference, previousValue, newValue) => {
+        this.newTabURL(newValue);
+      }
+    );
+
     // More initialization happens here
     this.toggleActivityStream(true);
     this.initialized = true;
